@@ -68,20 +68,20 @@ Todo list for the initial HW-SW integration.
 
 #### System
 
-- [] Edit README.md (formatting)
-- [] Check serial connection of the rPi and the Arduino 
-- [] Build exemplary microROS on the rPi 
-- [] Setup serial communication for the microROS comms
-- [] Create .rc scripts to start microROS after turning on 
-- [] Enable internet over LAN for development 
+- [ ] Edit README.md (formatting)
+- [ ] Check serial connection of the rPi and the Arduino 
+- [ ] Build exemplary microROS on the rPi 
+- [ ] Setup serial communication for the microROS comms
+- [ ] Create .rc scripts to start microROS after turning on 
+- [ ] Enable internet over LAN for development 
 
 #### ROS 2 control 
 
 - [x] Enable ros2_joy for the logitech joystick control
-- [] Enable upper-level control simple PID or pure-pursuit
-- [] Think of the sensory placement for the autonomous control 
-- [] Define initial SW arch for the testing phases
-- [] Write all necessary packages for the automatic deployment on the ROS 2
+- [ ] Enable upper-level control simple PID or pure-pursuit
+- [ ] Think of the sensory placement for the autonomous control 
+- [ ] Define initial SW arch for the testing phases
+- [ ] Write all necessary packages for the automatic deployment on the ROS 2
 - [x] Test initial funcitonality joy node 
 - [x] Test initial functionality teleop_twist_joy node
-- [] Fix joy to cmd_vel mapping 
+- [ ] Fix joy to cmd_vel mapping 
