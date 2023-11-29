@@ -2,7 +2,7 @@
 
 Repository dedicated to the integration of the upper-level and the lower-level software. 
 
-rPI --> dedicated to the ROS 2 (joystick, control, perception)
+rPI --> dedicated to the ROS 2 (joystick, control, perception)  
 arduino --> dedicated to low-level control (battery system, drive system, ligthing system)
 
 ## Setting up rPI: 
@@ -24,6 +24,7 @@ crobot and use SSH.
 Current IP of the crobot is: 192.168.1.5
 
 And connection is possible with: 
+
 ssh crobot@192.168.1.5
 password: crobot
 
@@ -33,6 +34,7 @@ gateway is 192.168.1.1
 
 ## TODO: 
 
+- [] Edit README.md (formatting)
 - [] Check serial connection of the rPi and the Arduino 
 - [] Build exemplary microROS on the rPi 
 - [] Create .rc scripts to start microROS after turning on 
