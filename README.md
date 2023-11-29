@@ -2,8 +2,13 @@
 
 Repository dedicated to the integration of the upper-level and the lower-level software. 
 
-rPI --> dedicated to the ROS 2 (joystick, control, perception)  
-arduino --> dedicated to low-level control (battery system, drive system, ligthing system)
+#### rPI  
+
+Dedicated to the ROS 2 (joystick, control, perception)  
+
+#### arduino  
+
+Dedicated to low-level control (battery system, drive system, ligthing system)
 
 ## Setting up rPI: 
 
@@ -30,6 +35,10 @@ password: crobot
 
 Create static IP of the PC that's connected as: 192.168.1.x, 
 gateway is 192.168.1.1
+
+## Resources used
+
+[Serial connection rPI](https://www.abelectronics.co.uk/kb/article/1035/serial-port-setup-in-raspberry-pi-os)
 
 
 ## TODO: 
