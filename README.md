@@ -82,10 +82,31 @@ Choose one you need and connect to it with:
 sudo nmcli device wifi connect <BSSID> password <PASSWORD>
 ```
 
+## Serial 
+
+UART --> GPIO 14/15 (`/dev/ttyAMA0`)
+[More info](https://jason19970210.medium.com/raspberry-pi-4-with-multiple-uart-interface-4eac75f74d7c)
+
+[Running microROS over serial port](https://micro.ros.org/docs/tutorials/core/first_application_rtos/freertos/)
+
+Command to start `micro_ros_agent` over serial port is: 
+```
+ros2 run micro_ros_agent micro_ros_agent serial --dev /dev/ttyAMA0
+```
+
+[Github issue with micro_ros_agent cmd](https://github.com/micro-ROS/micro_ros_arduino/issues/1105)
+
+Run `micro_ros_agent` over serial as: 
+```
+ros2 run micro_ros_agent micro_ros_agent serial --dev /dev/ttyAMA0 -b 115200
+```
 
 ## Resources used
 
 [Serial connection rPI](https://www.abelectronics.co.uk/kb/article/1035/serial-port-setup-in-raspberry-pi-os)
+
+
+
 
 ### Maintainer 
 
