@@ -14,13 +14,18 @@ Dedicated to low-level control (battery system, drive system, ligthing system...
 
 [joystick-drivers git repo](https://github.com/ros-drivers/joystick_drivers)
 
+
+```
 ros2 run joy joy_node 
+```
 
 ### Run teleop_twist_joy
 
 [teleop-twist-joy git repo](https://github.com/ros2/teleop_twist_joy)
-
+```
 ros2 launch teleop_twist_joy teleop-launch.py joy_config:='xbox'
+```
+
 
 ### Transport drivers git repo 
 
@@ -44,15 +49,39 @@ Following steps are necessary to set up rPI:
 It is possible to connect on the rPI by attaching ethernet cable from PC to the 
 crobot and use SSH. 
 
-Current IP of the crobot is: 192.168.1.5
+Current IP of the crobot is: `192.168.1.5`
 
 And connection is possible with: 
-
+``` 
 ssh crobot@192.168.1.5
 password: crobot
+``` 
 
-Create static IP of the PC that's connected as: 192.168.1.x, 
-gateway is 192.168.1.1
+Create static IP of the PC that's connected as: `192.168.1.x,` 
+gateway is `192.168.1.1`
+
+## How to connect to WiFi over SSH: 
+
+Run following command to list all of the available networks: 
+```
+nmcli device wifi list
+```
+
+Output is: 
+```
+IN-USE  BSSID              SSID                MODE   CHAN  RATE        SIGNAL  BARS  SECURITY  
+        B6:99:7B:6F:1F:2A  --                  Infra  6     130 Mbit/s  100     ▂▄▆█  WPA2      
+        1C:9E:CC:D1:09:98  TCHA90A5ZR          Infra  11    405 Mbit/s  55      ▂▄__  WPA2 WPA3 
+        00:CB:7A:A2:4E:88  TCH3P8S84A          Infra  1     405 Mbit/s  49      ▂▄__  WPA2 WPA3 
+
+```
+
+Choose one you need and connect to it with:
+
+```
+sudo nmcli device wifi connect <BSSID> password <PASSWORD>
+```
+
 
 ## Resources used
 
@@ -68,7 +97,7 @@ Todo list for the initial HW-SW integration.
 
 #### System
 
-- [ ] Edit README.md (formatting)
+- [x] Edit README.md (formatting)
 - [ ] Check serial connection of the rPi and the Arduino 
 - [ ] Build exemplary microROS on the rPi 
 - [ ] Setup serial communication for the microROS comms
