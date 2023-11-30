@@ -106,8 +106,6 @@ ros2 run micro_ros_agent micro_ros_agent serial --dev /dev/ttyAMA0 -b 115200
 [Serial connection rPI](https://www.abelectronics.co.uk/kb/article/1035/serial-port-setup-in-raspberry-pi-os)
 
 
-
-
 ### Maintainer 
 
 Current maintainer is fzoric8@gmail.com
@@ -119,19 +117,19 @@ Todo list for the initial HW-SW integration.
 #### System
 
 - [x] Edit README.md (formatting)
+- [x] Enable WiFi connection for the development
+- [x] Build exemplary microROS on the rPI
 - [ ] Check serial connection of the rPi and the Arduino 
-- [ ] Build exemplary microROS on the rPi 
 - [ ] Setup serial communication for the microROS comms
 - [ ] Create .rc scripts to start microROS after turning on 
-- [ ] Enable internet over LAN for development 
 
 #### ROS 2 control 
 
 - [x] Enable ros2_joy for the logitech joystick control
+- [x] Test initial funcitonality joy node 
+- [x] Test initial functionality teleop_twist_joy node
 - [ ] Enable upper-level control simple PID or pure-pursuit
 - [ ] Think of the sensory placement for the autonomous control 
 - [ ] Define initial SW arch for the testing phases
 - [ ] Write all necessary packages for the automatic deployment on the ROS 2
-- [x] Test initial funcitonality joy node 
-- [x] Test initial functionality teleop_twist_joy node
 - [ ] Fix joy to cmd_vel mapping 
