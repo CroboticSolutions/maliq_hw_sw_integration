@@ -82,6 +82,19 @@ Choose one you need and connect to it with:
 sudo nmcli device wifi connect <BSSID> password <PASSWORD>
 ```
 
+## micro-ROS
+
+In order to build microROS follow this [instructions](https://micro.ros.org/docs/tutorials/core/first_application_linux/). 
+
+#### When building micro-ROS 
+
+When building firmware, **DO NOT** source `/opt/ros/$ROS_DISTRO/setup.bash`, **DO** source `dev_ws/install/setup.bash`
+
+When building agent(with agent_ws), **DO** source `/opt/ros/$ROS_DISTRO/setup.bash`, **DO NOT** source `dev_ws/install/setup.bash`
+
+You'd better remove any setup like source `/opt/ros/$ROS_DISTRO/setup.bash` in your `~/.bashrc`. 
+
+
 ## Serial 
 
 UART --> GPIO 14/15 (`/dev/ttyAMA0`)
