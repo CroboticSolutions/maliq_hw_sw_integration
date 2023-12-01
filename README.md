@@ -19,6 +19,9 @@ Dedicated to low-level control (battery system, drive system, ligthing system...
 ros2 run joy joy_node 
 ```
 
+#### logitech joy works great! 
+#### chinese bt joy doesn't have floats!
+
 ### Run teleop_twist_joy
 
 [teleop-twist-joy git repo](https://github.com/ros2/teleop_twist_joy)
