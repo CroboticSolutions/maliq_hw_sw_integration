@@ -94,8 +94,34 @@ When building agent(with agent_ws), **DO** source `/opt/ros/$ROS_DISTRO/setup.ba
 
 You'd better remove any setup like source `/opt/ros/$ROS_DISTRO/setup.bash` in your `~/.bashrc`. 
 
+#### Adittional info
+
+If output of the: 
+```
+ros2 run micro_ros_setup create_agent_ws.sh
+```
+is: 
+```
+[ros2run]: Process exited with failure 6
+[ros2run]: Process exited with failure 6
+```
+
+device is not connected to the internet. 
+
+
+#### Relevant info 
+
+micro-ROS build duration: 
+* `firmware_build` : 30 min
+* `micro_ros_agent` : 5 min
+
 
 ## Serial 
+
+Add administrative privileges to the serial port as: 
+```
+sudo chmod 777 /dev/ttyAMA0 
+```
 
 UART --> GPIO 14/15 (`/dev/ttyAMA0`)
 [More info](https://jason19970210.medium.com/raspberry-pi-4-with-multiple-uart-interface-4eac75f74d7c)
@@ -112,6 +138,25 @@ ros2 run micro_ros_agent micro_ros_agent serial --dev /dev/ttyAMA0
 Run `micro_ros_agent` over serial as: 
 ```
 ros2 run micro_ros_agent micro_ros_agent serial --dev /dev/ttyAMA0 -b 115200
+```
+
+If the agent is running output is: 
+```
+[1701472247.113546] info     | TermiosAgentLinux.cpp | init                     | running...             | fd: 3
+[1701472247.114296] info     | Root.cpp           | set_verbose_level        | logger setup           | verbose_level
+```
+
+#### publish msg to topic as
+
+```
+ros2 topic pub /cmd_vel geometry_msgs/msg/Twist "linear:
+  x: 4.5
+  y: 6.0
+  z: 0.0
+angular:
+  x: 0.0
+  y: 0.0
+  z: 0.0" 
 ```
 
 ## Resources used
