@@ -146,6 +146,8 @@ If the agent is running output is:
 [1701472247.114296] info     | Root.cpp           | set_verbose_level        | logger setup           | verbose_level
 ```
 
+### [microROS discussion](https://discourse.ros.org/t/our-conclusions-on-trying-to-implement-micro-ros-in-our-robot/24690/4)
+
 #### publish msg to topic as
 
 ```
