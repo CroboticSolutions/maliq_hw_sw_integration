@@ -149,6 +149,15 @@ If the agent is running output is:
 [1701472247.114296] info     | Root.cpp           | set_verbose_level        | logger setup           | verbose_level
 ```
 
+
+### How to enable UART on the rPI? 
+
+[AskUbuntu](https://askubuntu.com/questions/1254376/enable-uart-communication-on-pi4-ubuntu-20-04)
+
+[rPI pinout](https://pinout.xyz/pinout/uart)
+
+[raspberry config](https://dev.to/elbruno/raspberrypi-install-raspi-config-on-ubuntu-22041-lts-195j)
+
 ### [microROS discussion](https://discourse.ros.org/t/our-conclusions-on-trying-to-implement-micro-ros-in-our-robot/24690/4)
 
 #### publish msg to topic as
