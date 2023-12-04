@@ -171,6 +171,8 @@ zswap.enabled=1 zswap.zpool=z3fold zswap.compressor=zstd dwc_otg.lpm_enable=0 co
 
 [raspberry config](https://dev.to/elbruno/raspberrypi-install-raspi-config-on-ubuntu-22041-lts-195j)
 
+[serial rPI4 setup info](https://devicetests.com/enabling-uart-communication-raspberry-pi-4-ubuntu-20-04)
+
 ### [microROS discussion](https://discourse.ros.org/t/our-conclusions-on-trying-to-implement-micro-ros-in-our-robot/24690/4)
 
 #### publish msg to topic as
@@ -204,8 +206,8 @@ Todo list for the initial HW-SW integration.
 - [x] Edit README.md (formatting)
 - [x] Enable WiFi connection for the development
 - [x] Build exemplary microROS on the rPI
-- [ ] Check serial connection of the rPi and the Arduino 
-- [ ] Setup serial communication for the microROS comms
+- [x] Check serial connection of the rPi and the Nucleo 
+- [x] Setup serial communication for the microROS comms
 - [ ] Create .rc scripts to start microROS after turning on 
 
 #### ROS 2 control 
